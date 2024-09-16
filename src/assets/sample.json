@@ -1,0 +1,15 @@
+//This file is created only for reference and not used in the project
+{
+  "sections": [
+    {
+      "id": "section1",
+      "layout": "2x2",
+      "fields": [
+        { "name": "firstName", "type": "text", "label": "First Name", "validation": { "required": true } },
+        { "name": "lastName", "type": "text", "label": "Last Name", "validation": { "required": true } },
+        { "name": "email", "type": "email", "label": "Email", "validation": { "required": true, "email": true } },
+        { "name": "phone", "type": "tel", "label": "Phone Number", "validation": { "required": false } }
+      ]
+    }
+  ]
+}
