@@ -1,5 +1,8 @@
 <form [formGroup]="form" class="p-6 space-y-6">
-  <div *ngFor="let section of sections" class="space-y-4">
+  <div *ngFor="let section of sections" class="space-y-4 border-2 rounded-md p-2">
+    <div class="rounded-md pl-2 py-1.5 bg-gray-200">
+      <h2 class="text-lg font-semibold">{{ section.name }}</h2>
+    </div>
     <div [ngClass]="getSectionClass(section.layout)" class="grid gap-4">
       <div *ngFor="let field of section.fields" [ngClass]="getFieldClass(section.layout)">
         <label class="block text-sm font-medium text-gray-700">{{ field.label }}</label>

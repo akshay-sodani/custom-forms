@@ -42,12 +42,14 @@ export class DynamicFormComponent implements OnInit {
         return 'grid-2x2';
       case '2x3':
         return 'grid-2x3';
+      case '3x3':
+        return 'grid-3x3';
       default:
         return '';
     }
   }
 
   getFieldClass(layout: string): string {
-    return layout === '2x2' || layout === '2x3' ? 'field' : '';
+    return layout === '2x2' || layout === '2x3' || layout === '3x3' ? 'field' : '';
   }
 }
